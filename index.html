@@ -1,0 +1,104 @@
+---
+layout: index
+title: Home
+permalink: /
+---
+<div class="spacer"></div>
+
+
+<div id="service section">
+    <div class="container centered">
+        <h2>Qu'est-ce que le Technoculture club ?</h2>
+        <div class="row centered">
+            {% for principe in site.principes %}
+            <div class="col-md-4">
+                <i class="fa fa-{{ principe.faicon }} fa-5x"></i>
+                <h4>{{ principe.name }}</h4>
+                <p>{{ principe.texte }}</p>
+            </div>
+            {% endfor %}	
+            <div class="col-md-12">
+                <a href="/a-propos/" class="btn btn-theme">En savoir plus</a>
+            </div>		
+        </div>
+    </div> 
+</div> 
+
+<div class="container centered section">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Principaux projets</h2>
+            {% for project in site.projects %}
+            <a href="{{ project.link }}" class="btn btn-theme btn-block btn-lg" target="_blank">{{ project.name }}</a>
+            {% endfor %}
+        </div>
+        <div class="col-md-4">
+            <h2>À venir</h2>
+            <ul class="left">
+            {% assign curDate = site.time | date: '%s' %}
+            {% for event in site.categories['event'] reversed limit:6 %}
+                {% assign postStartDate = event.date | date: '%s' %}
+                {% if postStartDate >= curDate %}
+                <li>{{ event.dates }} - <strong>{{ event.title }}</strong> 
+                    {% if event.link %}<a href="{{ event.link }}"><i class="fa fa-external-link" style="margin-left:5px"></i></a>{% endif %}
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Nouvelles</h2>
+            <ul class="left">
+            {% for news in site.categories['news'] limit:5 %}
+            <li>{{ news.date | date: '%d/%m/%Y' }} - <strong>{{ news.title }}</strong> 
+                {% if news.link %}<a href="{{ news.link }}"><i class="fa fa-external-link" style="margin-left:5px"></i></a>{% endif %}
+            </li>
+            {% endfor %}
+            </ul>
+            <a href="">Voir toutes les nouvelles ></a>
+        </div>
+    </div>
+</div>
+
+{% include newsletter.html %}
+
+<div class="container section">
+    <div class="row centered">
+        <h2>Retour sur la première édition de Museomix</h2>
+        <div class="row">
+            <div class="col-md-4 left">
+                <img src="/assets/img/mbam.jpg" class="img-responsive">
+                <h3>MBAM, 7, 8, 9 novembre 2014</h3>
+                <p>Cette première édition de Museomix à Montréal a réuni 12 équipes de 6 personnes, avec chacune un facilitateur dédié, pour 72h de créativité intense.</p>
+                <p>Pour revivre l'événement en photos, c'est par <a href="https://www.flickr.com/photos/125946042@N03/">ici</a>.</p>
+                <p>Retrouvez <a href="http://projects.museomixmtl.com">ici</a> l'intégralité des projets et la liste des participants.</p>
+                <p>Merci encore au musée, aux participants, aux partenaires et tous ceux qui ont rendu cette première édition possible !</p>
+            </div>
+            <div class="col-md-8 left">
+                <iframe src="//player.vimeo.com/video/116911536?portrait=0" width="5" height="3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- {% include project-portfolio2.html title="Projets" limit=6 %} 
+
+        <!-- {% include clients.html %} 
+    </div> <!--/row -->
+</div> <!--/container -->
+
+
+{% include questions.html title="Des questions ?" %}
+
+<!-- 
+<div class="container mtb">
+    <div class="row">
+
+        <div class="col-md-4">
+            <h4>Articles récents</h4>
+            <div class="hline"></div>
+            {% for post in site.categories['blog'] limit:5 %} 
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+            {% endfor %} 
+        </div>
+
+    </div> 
+</div> 
+-->

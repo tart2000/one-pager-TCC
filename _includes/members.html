@@ -1,0 +1,36 @@
+<div class="container mtb">
+    <div class="row centered">
+        <div class="col-md-12">
+            <h3>Le collectif</h3>
+            <hr>
+            <p>Les membres du collectif mettent en commun vision, expérience, savoir-faire et passion au service de l’innovation des pratiques managériales pour l’épanouissement des collaborateurs et de l’entreprise. Animax est un laboratoire collaboratif pour l’innovation conçu dans un but non-lucratif, comme outil de R&D ouvert à tous.</p>
+        </div>
+        {% for member in site.members %}
+        <div class="collapse" id="{{ forloop.index0 }}">
+            <div class="col-md-3 col-sm-6">
+                <p>{{ member.text }}</p>    
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 member-item">
+            <div class="he-wrap tpl6">
+            <img src="{{ "/assets/img/members/" | prepend: site.baseurl }}{{ member.img }}" alt="">
+                <div class="he-view">
+                    <div class="bg a0" data-animate="fadeIn">
+                        <h3 class="a1" data-animate="fadeInDown">Contact</h3>
+                        {% for entry in member.social %}
+                            <a href="{{ entry.url }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-{{ entry.title }}"></i></a>
+                        {% endfor %}
+                    </div><!-- he bg -->
+                </div><!-- he view -->		
+            </div><!-- he wrap -->
+            <h4>{{ member.name }}</h4>
+            <h5 class="ctitle">{{ member.position }}</h5>   
+            <a class="btn btn-sm" data-toggle="collapse" href="#{{forloop.index0}}" aria-expanded="false" aria-controls="{{forloop.index0}}">
+            En savoir plus
+            </a>
+        </div> <!--/col-lg-3 -->	
+
+        {% endfor %}
+        
+    </div> <!--/row -->
+</div> <!--/container -->
