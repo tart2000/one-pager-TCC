@@ -2,7 +2,7 @@
 
 # Site settings
 title: "Techno Culture Club"
-description: "Le point de rencontre entre les communautés culturelles et technologiques"
+description: "Le point de rencontre entre la culture et la technologie"
 analytics: "" #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "http://technoculture.club"
@@ -133,7 +133,7 @@ questions:
     n: 2
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Le point de rencontre entre les communautés culturelles et technologiques"
+about: "techno culture club : à l'intersection de la culture et de la technologie."
 about_plus: ""
 
 # Testimonial content. Shown on Home and About page. 

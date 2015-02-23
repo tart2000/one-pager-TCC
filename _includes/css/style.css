@@ -46,13 +46,21 @@
  	-moz-transition: opacity .5s ease-in-out;
   	-webkit-transition: opacity .5s ease-in-out;
 }
-#headerwrap {
+#nymphe {
 	background-image: url("/assets/img/nymphe.jpg");
 	background-position: center;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 	background-size: cover;
+	min-height: 400px;
+	-webkit-filter: grayscale(50%);
+    filter: gray;
+  	margin-top: 70px;
+  	padding-top: 100px;
+}
+#nymphe h1 {
+	color: white; 
 }
 .smb {
 	margin-bottom: 10px;
@@ -107,6 +115,9 @@ ul {
 }
 .left {
 	text-align: left;
+}
+.center {
+	text-align: center;
 }
 h2 {
 	background-color: #FFFF00; 
@@ -318,9 +329,9 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
-	min-height: 550px;
-	padding-top: 100px;
+	background-color: white;
+	min-height: 150px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 	text-align: center;
 }
@@ -331,7 +342,6 @@ a:focus {
 }
 
 #headerwrap h1 {
-	color: white;
 	margin-bottom: 25px;
 }
 
