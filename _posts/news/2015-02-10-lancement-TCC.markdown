@@ -8,8 +8,8 @@ img:
 thumb: 
 carousel:
 place: partout dans le monde 
-link: http://test.com
+link: 
 postcategory:
-- spaceapps
+- divers
 short: Le Technoculture club a été officiellement présenté à la communauté lors d'une soirée ouverte.   
 ---

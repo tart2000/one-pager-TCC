@@ -37,7 +37,7 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines: 
-    - TechnoCulture Club
+    - Techno Culture Club
     - "7255 Alexandra #203"
     - "Montréal, QC"
 email: bonjour@technoculture.club
@@ -87,18 +87,9 @@ members:
     
 # Clients information. Shown on Home and About pages.
 clients:
-  - name: Visiativ
-    img: visiativ.png
-    link: http://www.visiativ.com/
-  - name: ERASME
-    img: erasme.png
-    link: http://www.erasme.org/
-  - name: valpre
-    img: valpre.png
-    link: http://www.valpre.com/
-  - name: meetings
-    img: meetings.png
-    link: http://www.meetings.fr/
+  - name: 
+    img: 
+    link: 
     
 # Principes de travail 
 principes:
@@ -118,7 +109,10 @@ projects:
     link: http://museomixmtl.com
     logo: 
   - name: Space Apps Challenge 
-    link: http://spaceappschallenge.com/montreal
+    link: https://2015.spaceappschallenge.org/location/montreal/
+    logo: 
+  - name: RADAR - veille collaboartive
+    link: http://radar.technoculture.club 
     logo: 
   - name: SuperFund (bientôt)
     link: http://superfund.technoculture.club 
@@ -133,8 +127,8 @@ questions:
     n: 2
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "techno culture club : à l'intersection de la culture et de la technologie."
-about_plus: ""
+about: "Le techno culture club crée des contextes d’échange, de création et d’expérimentation au croisement de la culture et de la technologie."
+about_plus: "C'est une communauté d'intérêts ouverte, dans laquelle n'importe qui peut proposer un projet."
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:

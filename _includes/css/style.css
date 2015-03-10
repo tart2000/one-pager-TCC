@@ -59,8 +59,21 @@
   	margin-top: 70px;
   	padding-top: 100px;
 }
-#nymphe h1 {
+#aboutwrap {
+	background-image: url("/assets/img/museomix_pleniere.jpg");
+	background-position: center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	min-height: 400px;
+  	padding-top: 50px;
+  	padding-bottom: 50px;
+}
+#nymphe h1, #aboutwrap h1 {
 	color: white; 
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
 }
 .smb {
 	margin-bottom: 10px;
@@ -336,7 +349,7 @@ a:focus {
 	text-align: center;
 }
 
-#headerwrap h3, h5 {
+#headerwrap h5 {
 	color: white;
 	font-weight: 400;
 }
